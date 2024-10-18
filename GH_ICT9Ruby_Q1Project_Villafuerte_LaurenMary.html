@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Online Shopping</title>
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
+	<style type="text/css">
+	* {
+		padding: 0;
+		margin: 0;
+	}
+	body {
+		margin: 0;
+		background-image: url(https://i.pinimg.com/736x/36/f8/91/36f8910327ec59957db95ac6c38ce2ae.jpg);
+		color: black;
+	}
+
+	h2 {
+		color: cadetblue;
+	}
+
+	.row{
+         display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+	.header {
+		background-color: aliceblue;
+  		padding: 20px;
+        text-align: center;
+	}
+
+	.topnav {
+		 overflow: hidden;
+  		background-color: skyblue;
+  		padding: 10px;
+	}
+
+	.topnav a {
+  		float: left;
+  		display: block;
+  		color: #f2f2f2;
+  		text-align: center;
+  		padding: 14px 16px;
+  		text-decoration: none;
+	}
+
+	.topnav a:hover {
+  		background-color: #ddd;
+  		color: black;
+  		margin: 0,100px;
+	}	
+	
+	.column {
+		float: left;
+  	width: 33%;
+  	padding: 5px;
+  	 width: 300px; /* Adjusted width */
+            margin: 20px; /* Added margin for spacing */
+            text-align: center;
+            padding: 20px; /* Reduced padding */
+	}
+
+	.column img {
+		margin-top: 12px;
+	}
+
+	.row:after {
+		content: "";
+      display: table;
+      clear: both;
+	}
+
+
+	img {
+		border: 1px solid;
+  		border-radius: 4px;
+  		padding: 5px;
+  		width: 150px;
+
+	}
+
+	.footer {
+		background-color: aliceblue;
+		color: darkblue;
+		padding: 10px;
+  		text-align: center;
+	}
+
+	form {
+		border-radius: 5px;
+		color: white;
+		text-align: center;
+		background-color: skyblue;
+
+	}
+
+
+</style>
+</head>
+<body>
+<!-- HEADER -->
+<div class="header">
+	<h1>LaLauren</h1>
+</div>
+
+<!-- NAVIGATION BAR -->
+<div class="topnav">
+	<a href="#">Home</a>
+  <a href="#">Dresses</a>
+  <a href="#">Bags</a> 
+</div>
+
+<!--COLUMNS -->
+<div class="container">
+<div class="row">
+	<div class="column">
+		<img src="https://i.pinimg.com/control/564x/81/c9/71/81c971431f850f903f1ba92c1346495f.jpg">
+		<h2>50's Sky</h2>
+		<p>This dress is styled based on the 50's, it has sequins on the top while the skirt is mostly transparent.</p>
+		
+		<button>P500</button>
+	</div>
+
+	<div class="column">
+		<img src="https://i.pinimg.com/736x/bc/94/21/bc9421070f12a2427767eb50f7227e93.jpg">
+		<h2>Blue Gala</h2>
+		<p>This is a special designed dress and one of our <em>top sales</em>.</p>
+
+		<button>P3,000</button>
+		
+	</div>
+
+	<div class="column">
+		<img src="https://i.pinimg.com/564x/f3/a9/00/f3a90026b125a9889b9c103218e2450a.jpg">
+		<h2>Waterfall Style Dress</h2>
+		<p>The texture of the dress gives off a flowing waterfall illusion.</p>
+
+		<button>P500</button>
+	</div>
+</div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+	<p>Login to purchase! ^^</p>
+</div>
+
+<!-- FORM -->
+<div class="form">
+	<form>
+		<label for="fullname">Full Name:</label>
+		<input id="fullname" type="fn">
+		<br />
+
+		<label for="email">Email:</label>
+		<input id="email" type="em">
+		<br />
+
+		<label for="dresschosen">Dress Chosen:</label>
+		<input id="dresschosen" type="dc">
+		<br />
+
+		<input type="submit" value="Thank you for purchasing! <3">
+	</form>
+</div>
+</body>
+</html>
